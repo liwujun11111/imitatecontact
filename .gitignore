@@ -1,0 +1,11 @@
+/build
+.gradle/
+.idea/
+contactdemo.iml
+gradle/
+gradlew
+gradlew.bat
+local.properties
+proguard-rules.pro
+
+

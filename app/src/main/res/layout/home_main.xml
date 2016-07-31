@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/more"
+        app:title="手机联系人"
+        app:titleTextColor="#FFFFFF"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/id_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#22000000"
+            android:dividerHeight="0.1dp"></ListView>
+
+        <com.leo.imitatecontact.view.NavigationLetterListView
+            android:id="@+id/id_letterview"
+            android:layout_width="30dp"
+            app:letter_background="#10000000"
+            app:text_color_normal="#515151"
+            app:text_color_press="#3399ff"
+            app:text_size="13"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
